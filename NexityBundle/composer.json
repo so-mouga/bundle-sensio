@@ -1,0 +1,15 @@
+{
+    "name": "kevinmouga/nexity-bundle",
+    "description": "web service",
+    "require": {
+        "friendsofsymfony/rest-bundle": "2.2",
+        "jms/serializer-bundle": "^1.5",
+        "nelmio/cors-bundle": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "Kevin Mougammadaly",
+            "email": "kevin.mougammadaly@gmail.com"
+        }
+    ]
+}

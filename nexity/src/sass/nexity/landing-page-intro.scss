@@ -1,0 +1,73 @@
+
+// ANIMATION IS ONLY FOR DESKTOP
+
+@media screen and (min-width: $breakpoint) {
+  
+  body.form {
+    #cover {
+      animation: introBg 3s ease-in-out;
+      .pin img {
+        animation: introPin 3.5s ease-in-out;
+      }
+      .text {
+        animation: introRight1 2s ease-in-out;
+      }
+    }
+    form {
+      animation: introRight2 3s ease-in-out;
+    }
+  }
+  
+  @keyframes introBg {
+    0% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes introRight1 {
+    0% {
+      margin-right: -430px;
+    }
+    50% {
+      margin-right: -430px;
+    }
+    100% {
+      margin-right: 0;
+    }
+  }
+  @keyframes introRight2 {
+    0% {
+      margin-right: -500px;
+    }
+    66% {
+      margin-right: -500px;
+    }
+    100% {
+      margin-right: 0;
+    }
+  }
+  @keyframes introPin {
+    0% {
+      opacity: 0;
+      transform-origin: bottom;
+      transform: scale(0, 0);
+    }
+    70% {  // 86% -> no overlap
+      opacity: 0;
+      transform-origin: bottom;
+      transform: scale(0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: bottom;
+      transform: scale(1, 1);
+    }
+  }
+}

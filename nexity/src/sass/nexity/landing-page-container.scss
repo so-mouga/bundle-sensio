@@ -1,0 +1,51 @@
+
+html {
+  height: 100%;
+  
+  body.form {
+    min-height: 725px;
+    align-items: stretch;
+    
+    // ONLY FOR PHONE
+    @media screen and (max-width: ($breakpoint - 1px)) {
+      font-size: $base-font-size - 0.2rem;
+    }
+    
+    // ONLY FOR DESKTOP
+    @media screen and (min-width: $breakpoint) {
+      height: 100%;
+      overflow-x: hidden;
+    }
+    
+    header.main {
+      margin: 20px 25px;
+      
+      h1 {
+        margin: 0;
+       
+        a {
+          color: #606060;
+          font-weight: normal;
+          text-decoration: none;
+          
+          img {
+            height: 4em;
+          }
+          
+          span {
+            margin-left: 0.5em;
+          }
+        }
+      }
+    }
+    
+    #container {
+      flex: 1;
+      
+      // ONLY FOR PHONE
+      @media screen and (max-width: ($breakpoint - 1px)) {
+        display: block;
+      }
+    }
+  }
+}
